@@ -1,0 +1,15 @@
+.acf-fc-layout-multi-column .acf-multi-column-image {
+  padding-bottom: 66%;
+}
+.acf-fc-layout-multi-column .acf-multi-column-image .link-title {
+  bottom: -100%;
+}
+.acf-fc-layout-multi-column .acf-multi-column-image:hover .link-title {
+  bottom: 50%;
+}
+.acf-fc-layout-multi-column .acf-multi-column-image:hover .link-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+.acf-fc-layout-multi-column .acf-multi-column-image:hover .thumbnail {
+  transform: scale(1.1);
+}/*# sourceMappingURL=multi-column.css.map */

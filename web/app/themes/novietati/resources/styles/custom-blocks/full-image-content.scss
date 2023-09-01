@@ -1,0 +1,51 @@
+.acf-fc-layout-full-image-content {
+    position: relative;
+
+    .thumbnail-holder {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &.image-aspect-video .container {
+        min-height: 28vw;
+    }
+
+
+    &.image-aspect-stretch .thumbnail-holder {
+        height: 100%;
+    }
+
+    &.image-aspect-full-height {
+        .thumbnail-holder {
+            height: 100%;
+        }
+
+        .container {
+            height: 100vh;
+        }
+    }
+
+    &.row-reverse {
+        .thumbnail-holder {
+            left: auto;
+            right: 0;
+        }
+
+    }
+
+   
+}
+
+@media only screen and (max-width: $lg) {
+
+    .acf-fc-layout-full-image-content .thumbnail-holder,
+    .acf-fc-layout-full_image_content .thumbnail-holder {
+        position: relative;
+        top: 0;
+        transform: translate(0);
+        margin-bottom: 30px;
+
+    }
+}

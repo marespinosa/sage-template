@@ -1,0 +1,44 @@
+.woocommerce-account {
+
+    .woocommerce-MyAccount-content,
+    .woocommerce-MyAccount-navigation {
+        width: 100%;
+        float: none;
+    }
+
+    .woocommerce-MyAccount-navigation {
+        .woocommerce-MyAccount-navigation-link {
+            a {
+                display: block;
+                padding: 10px 12px;
+                margin: 0 2px;
+                border-radius: 6px;
+                font-size: 14px;
+                border: 1px solid $border;
+            }
+
+
+            &.is-active a,
+            &:hover a {
+                border-color: $mainBrand;
+            }
+        }
+    }
+
+    table.my_account_orders {
+        border: none;
+
+        td.woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions,
+        th.woocommerce-orders-table__header.woocommerce-orders-table__header-order-actions {
+            padding-right: 0;
+            text-align: center;
+            width: 100px;
+        }
+    }
+
+}
+
+// Not Logged
+.enable-only-login {
+    max-width: 400px;
+}

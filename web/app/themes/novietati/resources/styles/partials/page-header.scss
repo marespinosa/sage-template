@@ -1,0 +1,19 @@
+
+@media (max-width: $sm) {
+    .page-header {
+        &-full {
+            background-color: $darkAccent;
+
+            &-content {
+                height: auto;
+
+                .title,
+                .upper-title,
+                .description {
+                    color: $mainBrand  !important;
+                }
+            }
+        }
+    }
+
+}

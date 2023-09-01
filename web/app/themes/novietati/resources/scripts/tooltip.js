@@ -1,0 +1,1 @@
+import t from"tippy.js";$(()=>{t(".use-tippy-tooltip",{animation:"shift-away",theme:"legend",content:t=>t.getAttribute("data-tooltip")})});

@@ -1,0 +1,24 @@
+.post-password-form {
+
+    p {
+        margin-bottom: 20px
+    }
+
+    label input {
+        border: 1px solid;
+        padding: 10px;
+    }
+
+
+    input[type="submit"] {
+        padding: 11px 44px;
+        cursor: pointer;
+        color: $white;
+        background: $mainBrand;
+
+        &:hover {
+            background-color: $darkShades;
+
+        }
+    }
+}

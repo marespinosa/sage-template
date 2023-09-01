@@ -1,0 +1,36 @@
+.acf-fc-layout-faq {
+    .accordion-loop-item {
+
+        &-title {
+            cursor: pointer;
+
+            &:before {
+                position: absolute;
+                top: -3px;
+                right: 0;
+                width: 12px;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                content: "+";
+                color: $darkShades;
+            }
+
+            &.active {
+                &:before {
+                    content: '-';
+                }
+            }
+        }
+
+        &-content {
+            display: none;
+            padding-top: 8px;
+
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+//Entry-meta
+.entry-meta {
+
+    * {
+        color: rgba($color: $text, $alpha: .5);
+    }
+
+    &-author {
+        border-style: dotted;
+        border-bottom-width: 2px;
+
+        &:hover {
+            color: $text;
+            border-color: $text;
+        }
+    }
+}
+
+//Post Item
+.post-loop-item {}
+
+// Sidebar
+.table-of-content {
+    top: calc(#{$headerHeight} + 40px);
+    width: 300px;
+
+    &-item {
+        &.opacity-80:hover {
+            opacity: 1;
+        }
+
+        &:not(.opacity-80) {
+            color: $lightAccent;
+
+        }
+    }
+}

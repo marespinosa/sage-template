@@ -1,0 +1,11 @@
+//Animation
+.animate {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .3s;
+
+    &.hide {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}

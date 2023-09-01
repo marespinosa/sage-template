@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'common/variables.scss';
+@import 'common/global.scss';
+@import 'common/utilities.scss';
+
+@import 'components/tippy-toltip.scss';
+@import 'components/custom-content.scss';
+@import 'components/buttons.scss';
+@import 'components/form.scss';
+@import 'components/entry-content.scss';
+@import 'components/search.scss';
+@import 'components/slide.scss';
+
+@import 'partials/page-header.scss';
+@import 'partials/author-profile.scss';
+
+@import 'layouts/post.scss';
+@import 'layouts/protected-page.scss';
+@import 'layouts/style-guide.scss';
+
+@import 'sections/footer.scss';
+@import 'sections/header.scss';
+
+@import 'custom-blocks/faq.scss';
+@import 'custom-blocks/full-image-content.scss';
+@import 'custom-blocks/multi-column.scss';
+
+@import 'woocommerce/archive-products.scss';
+@import 'woocommerce/cart.scss';
+@import 'woocommerce/checkout.scss';
+@import 'woocommerce/general.scss';
+@import 'woocommerce/header.scss';
+@import 'woocommerce/myaccount.scss';
+@import 'woocommerce/single-product.scss';
+
+
+
+//Tippy
+@import 'tippy.js/dist/tippy.css';
+
+@import 'slick-carousel/slick/slick.css';
+
+@import 'components/custom.scss';
+
+//font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@import 'layouts/responsive-fixes.scss'; 

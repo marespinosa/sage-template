@@ -1,0 +1,10 @@
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+
+@import 'common/variables.scss';
+@import 'common/global.scss';
+@import 'common/utilities.scss';
+
+@import 'components/buttons.scss';
+@import 'components/entry-content.scss'; 

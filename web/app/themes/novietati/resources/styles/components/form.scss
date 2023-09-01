@@ -1,0 +1,79 @@
+.woocommerce-page,
+.forminator-ui.forminator-custom-form {
+
+    .input-text:not(.qty),
+    .forminator-textarea,
+    .forminator-input {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        color: $darkShades; 
+        border-radius: 8px;
+        border: 1px solid $mainBrand;
+
+        &::placeholder {
+            color: $darkAccent;
+        }
+    }
+
+    .forminator-label {
+        padding-left: 16px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $mainBrand;
+    }
+
+    .forminator-error-message {
+        display: block;
+        padding: 4px;
+        margin: 0 7px;
+        font-size: 13px;
+        color: $white;
+        background: $warning;
+    }
+
+    .forminator-button {
+        width: 100%;
+    }
+
+    .forminator-response-message {
+        color: $white;
+
+        li {
+            &:before {
+                color: $white;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        p,
+        ul {
+            margin-bottom: 0;
+        }
+
+        &.forminator-show,
+        &.forminator-loading {
+            background: $success;
+        }
+
+        &.forminator-error {
+            background: $warning;
+        }
+
+        &.forminator-show,
+        &.forminator-accessible {
+            margin-bottom: 15px;
+            padding: 20px 10px 20px 10px;
+        }
+
+    }
+}
+
+
+// WOO
+.woocommerce-page form .form-row textarea.input-text {
+    height: 180px;
+}

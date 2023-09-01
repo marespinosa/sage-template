@@ -1,0 +1,42 @@
+.main-footer {
+    color: $white;
+    background-color: $white;
+
+    // a[href] {
+    //     &:hover {
+    //         color: $lightAccent;
+    //         text-decoration: underline;
+    //     }
+    // }
+
+    &-menu {
+        .menu-item.title {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #15141D;
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+        border-top: 1px solid $darkAccent;
+
+
+        &-legend {
+            path {
+                fill: #202020;
+            }
+        }
+    }
+}
+
+.main-footer-business-info{
+    h4{
+        font-weight: 400;
+        color: #15141D;
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+

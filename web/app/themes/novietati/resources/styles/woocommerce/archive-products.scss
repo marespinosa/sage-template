@@ -1,0 +1,38 @@
+.woocommerce {
+
+    & &-ordering select {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid $border;
+    }
+
+    ul.products {
+
+        li.product {
+            text-align: center;
+
+            .woocommerce-loop-product__title {
+                font-size: 18px;
+                
+            }
+
+            .price {
+                font-size: inherit;
+                color: inherit;
+            }
+
+            .onsale {
+                position: absolute;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .woocommerce .woocommerce-ordering {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px;
+    }
+}

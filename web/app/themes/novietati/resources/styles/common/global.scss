@@ -1,0 +1,160 @@
+/*
+ * Fonts
+ */
+
+ .font-title {
+    font-family: $fontTitle;
+}
+
+.font-body {
+    font-family: $fontBody;
+}
+
+
+/*
+ * Tags
+ */
+* {
+    font-family: inherit;
+    color: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    color: $text;
+    font-family: $fontBody;
+    background: $white;
+
+    &.wating-loading {
+        position: fixed;
+        overflow-y: scroll;
+        width: 100%;
+        scroll-behavior: smooth;
+
+        * {
+            transition: none !important;
+        }
+    }
+
+    //Not apply to Editor Wordpress
+    &:not(#tinymce) {}
+}
+
+.text-selected,
+::selection {
+    color: $white;
+    background: $lightAccent;
+}
+
+/*
+ * Classes
+ */
+html.no-scroll {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+a,
+.navigation,
+.button,
+.transition-3s {
+    transition: all .3s;
+
+    path,
+    &:before,
+    &:after {
+        transition: all .3s;
+    }
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thumbnail-holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    .thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.break-spaces {
+    white-space: break-spaces;
+}
+
+.archive-pagination {
+    color: $mainBrand;
+
+    &-item {
+        display: inline-block;
+        padding: 4px 10px;
+        margin: 0 5px;
+        border: 1px solid $mainBrand;
+
+        &.current,
+        &:hover {
+            color: $lightAccent;
+            background: $mainBrand;
+
+        }
+
+    }
+
+    &-navigation {
+        margin: 0 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+}
+
+.list-separator {
+    display: inline-block;
+    height: 24px;
+    width: 1px;
+    background: rgba($color: $text, $alpha: 0.5);
+}
+
+.mobile-menu .menu-item>a:hover,
+.link-on-hover:hover {
+    color: $lightAccent;
+    text-decoration: underline;
+}
+
+@media (max-width: $xl) {
+    body {
+        .container {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    body {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .break-spaces {
+        white-space: unset;
+    }
+
+}

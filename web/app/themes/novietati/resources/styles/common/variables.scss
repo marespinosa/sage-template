@@ -1,0 +1,44 @@
+/*
+ * Primary Colors
+ * http://colormind.io/bootstrap/
+ */
+$lightShades: #F5F5F5;
+$lightAccent: #BCB6C6;
+$mainBrand: #096E8C;
+$darkAccent: #2B3B4A;
+$darkShades: #15141D;
+
+/*
+ * Secondary Colors
+ */
+$text: #202020;
+$link: $mainBrand;
+$warning: #096E8C;
+$success: #096E8C;
+
+$white: #F5F5F5;
+$black: #202020;
+
+$border: #BCB6C6;
+/*
+ * Elements 
+ */
+$headerHeight: 84px;
+$headerHeightSM: 66px;
+
+/*
+  * Tailwinds BreakPoints
+  */
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+/*
+ * Fonts
+ */
+
+$fontTitle: 'Sora', sans-serif;
+$fontBody: 'Lexend', sans-serif;

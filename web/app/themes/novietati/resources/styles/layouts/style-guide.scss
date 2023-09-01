@@ -1,0 +1,48 @@
+$colors: (
+    "lightShades": $lightShades,
+    "lightAccent" : $lightAccent,
+    "mainBrand" : $mainBrand,
+    "darkAccent": $darkAccent,
+    "darkShades": $darkShades
+);
+
+.style-guide {
+    &-color-box {
+        width: 200px;
+
+        .display-color {
+            height: 150px;
+        }
+
+        .color {
+            font-size: 18px;
+            color: #000;
+        }
+
+        .title {
+            color: #8E8E8E;
+        }
+
+        &.card-small {
+            .display-color {
+                height: 70px;
+                width: 70px;
+            }
+        }
+
+        @each $name,
+        $color in $colors {
+
+            &.#{$name} {
+
+                .display-color {
+                    background: $color;
+                }
+
+                .color::before {
+                    content: "#{$color}";
+                }
+            }
+        }
+    }
+}

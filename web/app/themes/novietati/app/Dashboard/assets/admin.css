@@ -1,0 +1,13 @@
+.custom-widget-container ul li {
+    padding: 0 0 8px;
+    font-size: 14px;
+    line-height: 1.14285714;
+}
+
+.custom-widget-container ul li .dashicons {
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #646970;
+}

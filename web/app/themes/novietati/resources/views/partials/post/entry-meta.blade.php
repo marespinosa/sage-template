@@ -1,0 +1,1 @@
+<p class="entry-meta">{!! $author !!} <span>on</span> {!! $publishedDate !!}</p>

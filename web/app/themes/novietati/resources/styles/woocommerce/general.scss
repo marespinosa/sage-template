@@ -1,0 +1,100 @@
+.woocommerce-entry-title {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+// Fix Link
+.product-name a:hover {
+    color: $link;
+}
+
+// Quantity Field
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.quantity {
+
+    .minus,
+    .plus,
+    .qty {
+        width: 100px;
+        line-height: 54px;
+        border: 1px solid $border;
+
+        &::-webkit-outer-spin-button,
+        ::-webkit-inner-spin-button {
+            appearance: none;
+        }
+    }
+
+
+    .minus,
+    .plus {
+        width: 30px;
+    }
+
+    .minus {
+        border-right: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .plus {
+        border-left: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+// Fix Super Select
+.woocommerce .select2-container .select2-selection--single {
+    height: 52px;
+    color: $darkShades;
+    border-radius: 8px;
+    border: 1px solid $mainBrand;
+
+    .select2-selection__rendered {
+        height: 52px;
+        line-height: 49px;
+        padding-left: 15px;
+    }
+
+    .select2-selection__arrow {
+        height: 51px;
+        right: 10px;
+
+    }
+}
+
+// Progress Bar
+.cart-checkout-process-bar {
+    color: $mainBrand;
+
+    path {
+        fill: $mainBrand;
+    }
+
+    &-item {
+        border-bottom: 6px solid $border;
+
+        &.active {
+
+            strong {}
+
+            border-color: $mainBrand;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .single-product .woocommerce-breadcrumb {
+        display: none;
+    }
+
+    .woocommerce-entry-title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,1 @@
+<p class="mb-3"><small>Status: {!! get_product_status() !!}</small></p>

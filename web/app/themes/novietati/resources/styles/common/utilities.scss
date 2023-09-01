@@ -1,0 +1,192 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2em;
+    font-size: 62px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: $mainBrand;
+    font-family: 'Playfair Display', serif !important;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.6em;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+blockquote {
+    position: relative;
+    padding: 40px 30px;
+    border-radius: 16px;
+    font-family: 'Lato', sans-serif;
+    background: rgba($color: $darkAccent, $alpha: .2);
+    font-family: 'Lato', sans-serif;
+
+    &::before {
+        position: absolute;
+        display: block;
+        top: -18px;
+        left: 30px;
+        width: 42px;
+        height: 40px;
+        content: "";
+        background: url('/images/quote.png') center / contain no-repeat;
+        font-family: 'Lato', sans-serif;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+.color {
+    &-mainBrand {
+
+        color: $mainBrand;
+
+        path {
+            fill: $mainBrand;
+        }
+    }
+
+    &-warning {
+        color: $warning;
+
+        path {
+            fill: $warning;
+        }
+    }
+
+    &-text {
+        color: $text;
+
+        path {
+            fill: $text;
+        }
+    }
+}
+
+/*
+ * Classes
+ */
+
+.paragraph-text-large {
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+}
+
+.paragraph-text-medium {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+
+small,
+.paragraph-text-small {
+    font-size: 12px;
+    line-height: 1.6em;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.section-background-secondary,
+.section-background-primary {
+    background-color: $mainBrand;
+
+    .entry-content {
+        color: $white;
+
+        li:before,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $white;
+        }
+    }
+}
+
+.section-background-secondary {
+    background-color: $lightAccent;
+
+
+    ::selection {
+        background: $mainBrand;
+    }
+}
+
+.section-page {
+    margin-bottom: 120px;
+}
+
+.link-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.fill {
+    &-main-brand {
+        fill: $mainBrand;
+    }
+}
+
+@media (max-width: $sm) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    } 
+
+    h5 {
+        font-size: 18px;
+    }
+}
+
+body{
+    background: #fff;
+}
+
+body, p, small, ul, li, ol, br, div {
+    font-family: 'Lato', sans-serif !important;
+}

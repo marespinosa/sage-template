@@ -1,0 +1,25 @@
+.author-profile {
+    border: 1px solid $border;
+
+    &-count-post {
+        background: $border;
+    }
+
+    .social-media-loop {
+        &-item {
+            &:hover {
+                path {
+                    fill: $lightAccent;
+                }
+            }
+        }
+    }
+
+    &-count-post {
+        opacity: .7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

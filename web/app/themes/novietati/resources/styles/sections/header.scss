@@ -1,0 +1,195 @@
+.main-header {
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+
+    &.hide-header {
+        top: -200px;
+    }
+
+    .main-branding {
+        width: auto;
+        height: 50px;
+    } 
+
+    .primary-navigation {
+        margin-left: -1px;
+
+        &>.menu-item {
+            position: relative;
+
+            &>a {
+                position: relative;
+                display: flex;
+                padding: 20px 15px;
+                font-weight: 500;
+                align-items: center;
+
+                &:before {
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transform-origin: center;
+                    content: "";
+                    background-color: $mainBrand;
+                }
+            }
+
+            &.current_page_item,
+            &:hover {
+                a {
+
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .sub-menu {
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: all .3s;
+                background-color: $lightAccent;
+
+                .menu-item a {
+                    position: relative;
+                    display: block;
+                    width: 250px;
+                    padding: 10px 15px;
+
+
+                    &:before {
+                        position: absolute;
+                        display: block;
+                        top: calc(50% - 6px);
+                        left: 5px;
+                        width: 10px;
+                        height: 10px;
+                        opacity: 0;
+                        content: "";
+                        transform: rotate(270deg);
+                        background: url('/images/downward-arrow.png') center / contain no-repeat;
+                    }
+
+                    &:hover {
+                        padding-left: 25px;
+
+                        &::before {
+                            left: 10px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            &.menu-item-has-children {
+                &>a {
+                    &:after {
+                        display: inline-block;
+                        width: 10px;
+                        height: 18px;
+                        margin-left: 3px;
+                        content: "";
+                        background: url('/images/downward-arrow.svg') center / contain no-repeat;
+                    }
+                }
+
+                &:hover {
+                    .sub-menu {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Single Post
+.progress-bar {
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 100%;
+    // background-color: $white;
+
+    .progress {
+        height: 100%;
+        width: 0;
+        background-color: $mainBrand;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background: $mainBrand;
+
+    &.active {
+        right: 0;
+    }
+}
+
+@media (max-width: $lg) {}
+
+@media (max-width: $lg) and (min-width: $sm) {
+    .mobile-menu {
+        .primary-navigation {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: calc(90vh - 100px);
+
+            &>.menu-item {
+                width: 50%;
+                margin-bottom: 16px;
+            }
+
+            .sub-menu {
+                padding-left: 40px;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .mobile-menu {
+
+        .primary-navigation {
+            font-size: 24px;
+
+            .sub-menu {
+                display: none;
+                padding-left: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .main-header {
+        height: $headerHeightSM;
+
+        &.hide-header {
+            top: 0;
+        }
+
+
+        .main-branding {
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+.search-form {
+    &-input {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    &-button {
+        width: 56px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: $mainBrand;
+
+        &:hover { 
+
+            background-color: rgba($color: $mainBrand, $alpha: 0.8);
+        }
+    }
+}
